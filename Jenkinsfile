@@ -36,7 +36,7 @@ pipeline {
             export PATH=$JAVA_HOME/bin:$PATH
             mvn org.owasp:dependency-check-maven:12.1.0:check \
                 -DnvdApiKey=$NVD_API_KEY
-            '''
+            '''}
       }
     }
 
