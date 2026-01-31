@@ -31,12 +31,12 @@ pipeline {
       steps { 
         echo "Running Software Composition Analysis using OWASP Dependency-Check ..."
         sh '''
-        export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+        export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
         export PATH=$JAVA_HOME/bin:$PATH
         java -version
         mvn org.owasp:dependency-check-maven:12.1.0:check \
             -DnvdApiKey=$NVD_API_KEY
-          '''
+        '''
       }
     }
 
