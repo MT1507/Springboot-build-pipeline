@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'main', credentialsId: 'Github', url: 'https://github.com/MT1507/DevSecOps-project.git'
+        git branch: 'main', credentialsId: 'Github', url: 'https://github.com/MT1507/Springboot-build-pipeline.git'
       }
     }
   
